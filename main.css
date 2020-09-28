@@ -2,26 +2,28 @@
     --background-color: #111111;
     --text-color: #ffffff;
     --main-color: #d3ac5f;
-    --font-family: 'Inter', sans-serif;
+    --text-font-family: 'SF Pro Text', sans-serif;
+    --display-font-family: 'SF Pro Display', sans-serif;
+    --mono-font-family: 'SF Mono', sans-serif;
+    --font-family: 'SF Mono', sans-serif;
     --text-letter-spacing: -0.02em;
-    --header-letter-spacing: -0.06em;
-    --header-word-spacing: 0.08em;
+    --header-letter-spacing: -0.01em;
+    --header-word-spacing: 0.11em;
     --text-font-size: 1.25rem;
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--text-font-family);
     background: var(--background-color);
     color: var(--text-color);
     letter-spacing: var(--text-letter-spacing);
     font-size: var(--text-font-size);
-
-    /* text-align: center; */
 }
 
 h1 {
+    font-family: var(--display-font-family);
     font-size: 21vw;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: var(--header-letter-spacing);
     word-spacing: var(--header-word-spacing);
     line-height: 1.1;
@@ -55,6 +57,7 @@ li {
 }
 
 li>a {
+    font-family: var(--mono-font-family);
     color: var(--main-color);
     text-decoration: none;
 }
