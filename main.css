@@ -1,7 +1,14 @@
+:root {
+    --background-color: #111111;
+    --text-color: #ffffff;
+    --main-color: #d3ac5f;
+    --font-family: 'Inter', sans-serif;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
-    background: black;
-    color: white;
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
 
     text-align: center;
 }
@@ -9,6 +16,14 @@ body {
 h1 {
     font-size: 6rem;
     font-weight: 800;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.04em;
     word-spacing: 0.08em;
+}
+
+li {
+    list-style-type: none;
+}
+li > a {
+    color: var(--main-color);
+    text-decoration: none;
 }
