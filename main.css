@@ -9,15 +9,15 @@
     --header-word-spacing: 0.11em;
     --text-font-size: 1.25rem;
 
-    --text-shadow-color: rgba(255, 85, 0, 0.94);
-    --border-color: rgba(61, 167, 248, 0.63);
+    --text-shadow-color: #f00;
+    --border-color: rgba(61, 167, 248, 0.78);
     --text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 20px var(--text-shadow-color), 0 0 30px var(--text-shadow-color),
         0 0 40px var(--text-shadow-color), 0 0 55px var(--text-shadow-color),
         0 0 75px var(--text-shadow-color);
-    --border-shadow: inset 0 0 50px var(--border-color), 0 0 10px var(--border-color), 0 0 20px var(--border-color), 0 0 30px var(--border-color);
+    --border-shadow: inset 0 0 20px var(--border-color), 0 0 10px var(--border-color), 0 0 25px var(--border-color);/*, 0 0 30px var(--border-color);*/
 }
 
 body {
@@ -92,7 +92,7 @@ nav>div {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 20px;
-    padding: 7px 19px;
+    padding: 5px 18px;
     transform: rotate(-8deg);
     box-shadow: var(--border-shadow);
 }
