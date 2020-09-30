@@ -14,7 +14,7 @@
 
     --text-shadow-color: rgb(224, 0, 0);
     --border-color: rgba(61, 167, 248, 0.8);
-    --text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    --text-shadow: 0 0 1px rgba(255, 255, 255, 0.38), 0 0 5px #fff, 0 0 10px #fff,
         0 0 6px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 20px var(--text-shadow-color),
@@ -92,6 +92,8 @@ nav>div {
     padding: 4px 18px;
     transform: rotate(calc(-1 * var(--neon-rotate)));
     box-shadow: var(--border-shadow);
+
+    /* animation: flicker 3s linear infinite; */
 }
 
 nav>div>p {
@@ -105,4 +107,30 @@ nav>div>p>span {
     font-weight: 300;
     font-family: var(--display-font-family);
     text-shadow: var(--text-shadow);
+}
+
+
+@keyframes flicker {
+
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        box-shadow: var(--border-shadow);
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        box-shadow: none;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+    }
 }
