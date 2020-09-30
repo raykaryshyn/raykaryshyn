@@ -12,16 +12,24 @@
     --neon-rotate: 10deg;
     --border-radius: 18px;
 
-    --text-shadow-color: rgb(224, 0, 0);
+    --text-shadow-color: rgba(224, 0, 0, 1);
+    --text-shadow-color-faded: rgba(224, 0, 0, 0.9);
     --border-color: rgba(61, 167, 248, 0.8);
+    --border-color-faded: rgba(61, 167, 248, 0.8);
     --text-shadow: 0 0 1px rgba(255, 255, 255, 0.38), 0 0 5px #fff, 0 0 10px #fff,
         0 0 6px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 20px var(--text-shadow-color),
         0 0 30px var(--text-shadow-color), 0 0 40px var(--text-shadow-color),
         0 0 55px var(--text-shadow-color), 0 0 80px var(--text-shadow-color);
+    --text-shadow-faded: 0 0 1px rgba(255, 255, 255, 0.38), 0 0 5px #fff, 0 0 10px #fff,
+        0 0 3px var(--text-shadow-color-faded), 0 0 8px var(--text-shadow-color-faded),
+        0 0 10px var(--text-shadow-color-faded), 0 0 10px var(--text-shadow-color-faded),
+        0 0 10px var(--text-shadow-color-faded), 0 0 20px var(--text-shadow-color-faded),
+        0 0 30px var(--text-shadow-color-faded), 0 0 40px var(--text-shadow-color-faded),
+        0 0 55px var(--text-shadow-color-faded), 0 0 80px var(--text-shadow-color);
     --border-shadow: inset 0 0 20px var(--border-color), 0 0 5px var(--border-color), 0 0 22px var(--border-color);
-    /* , 0 0 25px var(--border-color); */
+    --border-shadow-faded: inset 0 0 15px var(--border-color-faded), 0 0 3px var(--border-color-faded), 0 0 15px var(--border-color-faded);
 }
 
 body {
@@ -93,7 +101,7 @@ nav>div {
     transform: rotate(calc(-1 * var(--neon-rotate)));
     box-shadow: var(--border-shadow);
 
-    /* animation: flicker 3s linear infinite; */
+    animation: flicker-border 18s linear infinite;
 }
 
 nav>div>p {
@@ -107,10 +115,12 @@ nav>div>p>span {
     font-weight: 300;
     font-family: var(--display-font-family);
     text-shadow: var(--text-shadow);
+
+    animation: flicker-text 9s ease infinite;
 }
 
 
-@keyframes flicker {
+/* @keyframes flicker {
 
     0%,
     19.999%,
@@ -132,5 +142,56 @@ nav>div>p>span {
     69.999% {
         box-shadow: none;
         border: 2px solid rgba(255, 255, 255, 0.33);
+    }
+} */
+
+@keyframes flicker-border {
+
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        box-shadow: var(--border-shadow);
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    10%, 39%, 40% {
+        box-shadow: var(--border-shadow);
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+    10.4%, 39.3%, 40.3% {
+        box-shadow: none;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+    }
+    10.8%, 39.6%, 40.6% {
+        box-shadow: var(--border-shadow);
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    12.5%,
+    37.5%,
+    62.5%,
+    87.5% {
+        box-shadow: var(--border-shadow-faded);
+        border: 2px solid rgba(255, 255, 255, 0.75);
+    }
+}
+
+@keyframes flicker-text {
+
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        text-shadow: var(--text-shadow);
+    }
+
+    12.5%,
+    37.5%,
+    62.5%,
+    87.5% {
+        text-shadow: var(--text-shadow-faded);
     }
 }
