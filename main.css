@@ -89,7 +89,7 @@ nav>div {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: var(--border-radius);
-    padding: 2.5px 18px;
+    padding: 4px 18px;
     transform: rotate(calc(-1 * var(--neon-rotate)));
     box-shadow: var(--border-shadow);
 }
