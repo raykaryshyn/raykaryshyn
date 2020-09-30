@@ -13,14 +13,14 @@
     --border-radius: 17px;
 
     --text-shadow-color: rgb(224, 0, 0);
-    --border-color: rgba(61, 167, 248, 0.82);
+    --border-color: rgba(61, 167, 248, 0.8);
     --text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #fff,
         0 0 6px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 10px var(--text-shadow-color),
         0 0 10px var(--text-shadow-color), 0 0 20px var(--text-shadow-color),
         0 0 30px var(--text-shadow-color), 0 0 40px var(--text-shadow-color),
         0 0 55px var(--text-shadow-color), 0 0 80px var(--text-shadow-color);
-    --border-shadow: inset 0 0 22px var(--border-color), 0 0 10px var(--border-color), 0 0 30px var(--border-color);
+    --border-shadow: inset 0 0 20px var(--border-color), 0 0 5px var(--border-color), 0 0 22px var(--border-color);
     /* , 0 0 25px var(--border-color); */
 }
 
