@@ -10,6 +10,7 @@
     --text-font-size: 1.25rem;
 
     --neon-rotate: 10deg;
+    --neon-rotate-opposite: -10deg;
     --border-radius: 18px;
 
     --text-shadow-color: rgba(245, 0, 0, 1);
@@ -103,7 +104,7 @@ nav>div {
     border: 2px solid rgba(255, 255, 255, 0.82);
     border-radius: var(--border-radius);
     padding: 4px 18px;
-    transform: rotate(calc(-1 * var(--neon-rotate)));
+    transform: rotate(var(--neon-rotate-opposite));
     box-shadow: var(--border-shadow);
 
     animation: flicker-border 18s linear infinite;
