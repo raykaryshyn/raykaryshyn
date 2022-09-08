@@ -2,6 +2,8 @@
 
 ## 📝 Articles
 
+I'll occasionally write an article on Medium ([@raykaryshyn](https://medium.com/@raykaryshyn)) related to interesting projects I've worked on or things I've learned about.
+
 ### MITRE ATT&CK Inspired
 
 - [An Implementation of FakeTLS](https://medium.com/@raykaryshyn/an-implementation-of-faketls-85b94f496d72): How adversaries can disguise command and control activity with protocol impersonation.
