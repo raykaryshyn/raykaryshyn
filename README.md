@@ -1,9 +1,14 @@
-### Hi, I'm Ray. 👋
+# 👋 Hi, I'm Ray. 
 
-#### 📝 Articles
+## 📝 Articles
+
+### MITRE ATT&CK Inspired
 
 - [An Implementation of FakeTLS](https://medium.com/@raykaryshyn/an-implementation-of-faketls-85b94f496d72): How adversaries can disguise command and control activity with protocol impersonation.
 - [Keylogging With ARMv6 Assembly](https://medium.com/@raykaryshyn/keylogging-with-armv6-assembly-40edcf5bd0ff): Using a Raspberry Pi Zero W to explore ARM assembly and /dev/input.
+
+### Cybersecurity Frameworks
+
 - [Comprehending the NIST Cybersecurity Framework](https://medium.com/@raykaryshyn/comprehending-the-nist-cybersecurity-framework-1d6b5cd4ff3a): A brief personal study on its structure and significance.
 
 <!--
