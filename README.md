@@ -1,4 +1,6 @@
-# 👋 Hi, I'm Ray. 
+# 👋 Hi, I'm Ray.
+
+![NG Logo](./ng_logo.jpg)
 
 ## 📝 Articles
 
