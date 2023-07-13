@@ -1,7 +1,5 @@
 # 👋 Hi, I'm Ray.
 
-![NG Logo](./ng_logo.jpg)
-
 ## 📝 Articles
 
 I'll occasionally write an article on Medium ([@raykaryshyn](https://medium.com/@raykaryshyn)) related to interesting projects I've worked on or things I've learned about.
